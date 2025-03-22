@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutorial Slider</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="slider-container">
+    <!-- Slides -->
+    <div class="slider">
+      <div class="slide active">
+        <h2>Step 1: Introduction</h2>
+        <p>Welcome to the tutorial! This is the first step to learning something new.</p>
+        <img src="https://thumbs.dreamstime.com/b/introduction-concept-word-cork-board-77226561.jpg" alt="Placeholder Image">
+      </div>
+      <div class="slide">
+        <h2>Step 2: Getting Started</h2>
+        <p>Now that you're familiar with the basics, let's dive deeper into the process.</p>
+        <img src="https://www.shutterstock.com/shutterstock/photos/310831844/display_1500/stock-photo-text-let-us-get-started-with-red-marker-aside-is-isolated-on-white-paper-background-310831844.jpg" alt="Placeholder Image">
+      </div>
+      <div class="slide">
+        <h2>Step 3: Advanced Techniques</h2>
+        <p>You're almost there! Learn advanced techniques to master the skill.</p>
+        <img src="https://media.licdn.com/dms/image/v2/D5612AQH-56JEfIdxNA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1724572448942?e=2147483647&v=beta&t=XJfuM3lNVKXOFIxtxOrch3cYJP5UT5R-mUKCVJv9Z-w" alt="Placeholder Image">
+      </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button class="prev-btn" aria-label="Previous Slide">&#10094;</button>
+    <button class="next-btn" aria-label="Next Slide">&#10095;</button>
+
+    <!-- Slide Number Indicator -->
+    <div class="slide-indicator">
+      <span class="current-slide">1</span> / <span class="total-slides">3</span>
+    </div>
+  </div>
+
+  <!-- Input Form for New Slide -->
+  <div class="form-container">
+    <h3>Add a New Slide</h3>
+    <form id="slide-form">
+      <label for="slide-title">Title:</label>
+      <input type="text" id="slide-title" placeholder="Enter slide title" required>
+
+      <label for="slide-description">Description:</label>
+      <textarea id="slide-description" placeholder="Enter slide description" required></textarea>
+
+      <label for="slide-image">Image URL:</label>
+      <input type="url" id="slide-image" placeholder="Enter image URL" required>
+
+      <button type="submit">Add Slide</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

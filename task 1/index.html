@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fantasy Spin Wheel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="magic-background"></div>
+  <div class="container">
+    <h1>✨ Mystical Spin Wheel ✨</h1>
+    <div id="name-input-section">
+      <label for="name">Enter your name:</label>
+      <input type="text" id="name" placeholder="Your name">
+      <button id="submit-name">Submit</button>
+    </div>
+    <div id="wheel-section" class="hidden">
+      <div class="wheel">
+        <div class="wheel-partition" data-number="1">
+          <img src="https://via.placeholder.com/100?text=Prize+1" alt="Prize 1">
+          
+        </div>
+        <div class="wheel-partition" data-number="2">
+          <img src="https://via.placeholder.com/100?text=Prize+2" alt="Prize 2">
+          
+        </div>
+        <div class="wheel-partition" data-number="3">
+          <img src="https://via.placeholder.com/100?text=Prize+3" alt="Prize 3">
+          
+        </div>
+        <div class="wheel-partition" data-number="4">
+          <img src="https://via.placeholder.com/100?text=Prize+4" alt="Prize 4">
+          
+        </div>
+        <div class="wheel-partition" data-number="5">
+          <img src="https://via.placeholder.com/100?text=Prize+5" alt="Prize 5">
+          
+        </div>
+        <div class="wheel-partition" data-number="6">
+          <img src="https://via.placeholder.com/100?text=Prize+6" alt="Prize 6">
+          
+        </div>
+        <div class="wheel-partition" data-number="7">
+          <img src="https://via.placeholder.com/100?text=Prize+7" alt="Prize 7">
+          
+        </div>
+        <div class="wheel-partition" data-number="8">
+          <img src="https://via.placeholder.com/100?text=Prize+8" alt="Prize 8">
+         
+        </div>
+      </div>
+      <div class="pointer"></div> <!-- Stick pointer -->
+      <button id="spin-button">Spin the Wheel</button>
+    </div>
+    <div id="result-section" class="hidden">
+      <h2>🎉 <span id="result"></span> 🎉</h2>
+    </div>
+  </div>
+  <!-- Fireworks Container -->
+  <div id="fireworks-container"></div>
+  <!-- Sound Effect -->
+  <audio id="win-sound" src="https://www.soundjay.com/misc/sounds/bell-ringing-05.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
